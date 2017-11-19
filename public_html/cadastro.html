@@ -9,8 +9,243 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Importar a biblioteca do jQuery-->
+        <script src="js/jquery-3.2.1.js"></script>
+
+        <!--Importar a biblioteca Popper-->
+        <script src="js/popper.js"></script>
+
+        <!--Importar a biblioteca do Bootstrap-->
+        <script src="js/bootstrap.js"></script>
+
+        <!--Importar o CSS do Bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+
     </head>
     <body>
-        <div>TODO write content</div>
+
+        <div class="container">
+            <!--esta é a linha do topo-->
+            <div class="row">
+                <div class="col">
+
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <a class="navbar-brand" href="#">Livraria </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                            <ul class="navbar-nav mr-auto">
+
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Principal<span class="sr-only">(current)</span></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Login</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Categorias
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">Disabled</a>
+                                </li>
+
+                            </ul>
+
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="O que procura?" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!--.............................................................-->
+
+            <!--esta é a linha do conteúdo-->
+            <!--
+            <div class="row">               
+
+                <div class="col-3"> 
+
+                    <div class="list-group">
+
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            Categorias
+                        </a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Administração</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Agropecúaria</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Artes</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Audiolivro</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Autoajuda</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Ciências Biolôgicas</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Ciências Exatas</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Ciências Humanas e Sociais</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Contabilidade</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Cursos e Idiomas</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Dicionários e Manuais de Conversação</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Diddáticos</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Direito</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Economia</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Engenharia e Tecnologia</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Esoterismo</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Espiritismo</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Esporte e Lazer</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Gastronomia</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Geografia e História</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">HQs</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Informática</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Linguística</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Literatura Estrangeira</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Literatura Infantojuvenil</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Literatura Nacional</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Medicina</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Psicologia e Psicanálise</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Religião</a>
+
+                        <a href="#" class="list-group-item list-group-item-action">Turismo</a>
+
+                    </div>
+                </div>
+            -->
+            <div class="row float-left">               
+
+                <div class="col-5"> 
+
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email"><br/><br/>
+                            </div><br/><br/>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Senha</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">               
+
+                <div class="col-5"> 
+
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                </div>
+            </div>
+
+            <!--.............................................................-->
+
+            <!--esta é a linha do rodapé-->
+            <div class="row ">
+
+                <div class="col">
+                    <h4>Atendimento</h4>
+                </div>
+
+                <div class="col">
+                    <h4>Sobre nós</h4>
+                </div>
+
+                <div class="col">
+                    <h4>Pagamento</h4>
+                </div>
+
+            </div>
+
+        </div>
     </body>
 </html>
