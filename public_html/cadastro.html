@@ -169,18 +169,23 @@ and open the template in the editor.
                         <div class="card-body">
                             <form>
                                 <div class="form-row">
-                                    <div class="form-group col-9 ">
+                                     <div class="form-group col-md-9">
                                         <label for="inputEmail4">Email</label>
-                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email"><br/><br/>
+                                        <input type="email" class="form-control" id="email" placeholder="email@email.com">
                                     </div>
-
-                                    <div class="form-group col-9">
-                                        <label for="inputPassword4">Senha</label>
-                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Crie sua senha</label>
+                                        <input type="password" class="form-control" id="senha" placeholder="Password">
                                     </div>
                                 </div>
-
-                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox"> Lembrar
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Entrar</button>
                             </form>
                         </div>
                     </div>
@@ -196,59 +201,64 @@ and open the template in the editor.
 
                         <div class="card-body">
                             <form>
-                        <div class="form-row">
-                            <div class="form-group col-md-9">
-                                <label for="inputEmail4">Email</label>
-                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="inputPassword4">Crie sua senha</label>
-                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="inputPassword4">Confirme sua senha</label>
-                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAddress">Address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAddress2">Address 2</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="inputState">State</label>
-                                <select id="inputState" class="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-2">
-                                <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox"> Check me out
-                                </label>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Cadastrar</button>
-                    </form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-9">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="email@email.com">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Crie sua senha</label>
+                                        <input type="password" class="form-control" id="senha" placeholder="Password">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Confirme sua senha</label>
+                                        <input type="password" class="form-control" id="confirmaSenha" placeholder="Password">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="inputAddress2">RG</label>
+                                        <input type="text" class="form-control" id="rg" placeholder="xxxxxxxxxxxx">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputAddress2">CPF</label>
+                                        <input type="text" class="form-control" id="cpf" placeholder="zzzzzzzzzzzzz">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label for="inputAddress">Endereço</label>
+                                        <input type="text" class="form-control" id="endereco" placeholder="Rua A, 000">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCity">Cidade</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState">Estado</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Escolha...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="inputZip">CEP</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox"> Lembrar
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <!--.............................................................-->
 
             <!--esta é a linha do rodapé-->
