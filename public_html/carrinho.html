@@ -22,6 +22,41 @@ and open the template in the editor.
         <!--Importar o CSS do Bootstrap-->
         <link rel="stylesheet" href="css/bootstrap.css"/>
 
+        <style type="text/css">
+            .centralizar{
+                text-align: center;
+            }
+            .card-img{
+                width: 40px;
+                height: 60px;
+
+
+            }
+            .card{
+                margin: 5px;
+            }
+            .row{
+                margin-bottom: 10px;
+            }
+            #valorSubTotal{
+                text-align: right;
+                font-size: 17px;
+                background-color: #d6d8d9;
+            }
+            #valorTotal{
+                text-align: right;
+                margin-left: 13px;
+                font-size: 17px;
+                background-color: #d6d8d9;
+            }
+            .btnContinuar{
+                text-align: center;
+                
+            }
+            .card{
+                background-color: #d6d8d9;
+            }
+        </style>
     </head>
     <body>
 
@@ -84,37 +119,79 @@ and open the template in the editor.
 
             <div class="row">               
 
-                <div class="col-9">
+                <div class="col-8">
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">Item</th>
-                                <th scope="col">Preço</th>
-                                <th scope="col">Quantidade</th>
-                                <th scope="col">Subtotal</th>
+                                <th scope="col" class="centralizar">Item</th>
+                                <th scope="col" class="centralizar">Preço</th>
+                                <th scope="col" class="centralizar">Quantidade</th>
+                                <th scope="col" class="centralizar">Subtotal</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr >
-                                <td class="centralizar">O Hobbit - 7ª Ed. 2013</td>
-                                <td>R$ 19,90</td>
-                                <td>1</td>
-                                <td>R$ 19,90</td>
+                                <td class="centralizar"><img class="card-img " src="imagens/hobbit.png" alt=""> O Hobbit - 7ª Ed. 2013</td>
+                                <td class="centralizar">R$ 19,90</td>
+                                <td class="centralizar">1</td>
+                                <td class="centralizar">R$ 19,90</td>
                             </tr>
                             <tr>
-                                <td class="centralizar">It - A Coisa</td>
-                                <td>R$ 56,24</td>
-                                <td>1</td>
-                                <td>R$ 56,24</td>
+                                <td class="centralizar"><img class="card-img " src="imagens/it.png" alt=""> It - A Coisa</td>
+                                <td class="centralizar">R$ 56,24</td>
+                                <td class="centralizar">1</td>
+                                <td class="centralizar">R$ 56,24</td>
                             </tr>
                             <tr>
-                                <td class="centralizar">Watchmen</td>
-                                <td>R$ 88,00</td>
-                                <td>1</td>
-                                <td>R$ 88,00</td>
+                                <td class="centralizar"><img class="card-img " src="imagens/watchmen1.png" alt=""> Watchmen</td>
+                                <td class="centralizar">R$ 88,00</td>
+                                <td class="centralizar">1</td>
+                                <td class="centralizar">R$ 88,00</td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+
+                <div class="col-4">
+                    <div class="card" style="width: 21rem;">
+                        <div class="card-body">
+                            <h6 class="card-title">Cupom de desconto</h6>
+                            <form class="form-inline">
+                                <div class="form-group ">
+                                    <input type="text" class="form-control" id="inputPassword2" placeholder="Digite o cupom">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Aplicar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 21rem;">
+                        <div class="card-body">
+                            <h6 class="card-title">Consulte o frete e prazos de entrega</h6>
+                            <form class="form-inline">
+                                <div class="form-group ">
+                                    <input type="text" class="form-control" id="inputPassword2" placeholder="Digite seu CEP">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Consultar</button><br/>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox"> Frete Internacional
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 21rem;">
+                        <div class="card-body">
+                            <h5 class="card-title form-check-inline">SUBTOTAL</h5>
+                            <input type="text" readonly class="form-control-plaintext" id="valorSubTotal" value="R$ 164,14">
+                            <h3 class="card-title form-check-inline">TOTAL</h3>
+                            <input type="text" readonly class="form-control-plaintext" id="valorTotal" value="R$ 164,14">
+                            
+                            <a href="#" class="btn btn-warning centralizar">Continuar</a>
+                        </div>
+                    </div>
                 </div>
             </div>    
             <!--.............................................................-->
