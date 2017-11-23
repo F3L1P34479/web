@@ -16,7 +16,9 @@
 
         <!--Importar o CSS do Bootstrap-->
         <link rel="stylesheet" href="css/bootstrap.css"/>
-
+        
+        <linK rel="stylesheet" type="text/css" href="css/estilo.css"/>
+        <!--
         <style type="text/css">
             .centralizar{
                 text-align: center;
@@ -33,8 +35,17 @@
             .row{
                 margin-bottom: 10px;
             }
+            #cartao{
+                width: 300px; 
+                height: 200px;
+            }
+            #carrinho{
+                width: 30px; 
+                height: 30px;
+                text-align: right;
+            }
         </style>
-
+        -->
     </head>
     <body>
 
@@ -44,7 +55,7 @@
                 <div class="col">
 
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a class="navbar-brand" href="#">Livraria O Senhor dos Nerds</a>
+                        <a class="navbar-brand" href="#">Livraria Paranavaí</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -68,10 +79,10 @@
                                     </a>
 
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="carrinho.html">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Pré venda</a>
+                                        <a class="dropdown-item" href="#">Coleções</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Novidades</a>
                                     </div>
 
                                 </li>
@@ -80,12 +91,19 @@
                                     <a class="nav-link disabled" href="#">Disabled</a>
                                 </li>
 
-                            </ul>
+                            </ul >
 
                             <form class="form-inline my-2 my-lg-0">
                                 <input class="form-control mr-sm-2" type="search" placeholder="O que procura?" aria-label="Search">
                                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                             </form>
+
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item centralizar">
+                                    <a class="nav-link " href="carrinho.html"><img id="carrinho" src="imagens/carrinho.png" alt=""></a>
+                                </li>
+
+                            </ul>
                         </div>
                     </nav>
                 </div>
@@ -104,7 +122,7 @@
                             Categorias
                         </a>
 
-                        
+
                         <a href="#" class="list-group-item list-group-item-action">Audiolivro</a>
 
                         <a href="#" class="list-group-item list-group-item-action">Ciências Biolôgicas</a>
@@ -156,8 +174,8 @@
                 <div class="col-9">
 
                     <div class="card float-left" style="width: 16rem;">
-                        <a href="produto.html" ><img class="card-img centralizar" src="imagens/SrDosAneis.png" alt=""></a>
-                        
+                        <a href="produto.html" ><img class="card-img " src="imagens/SrDosAneis.png" alt=""></a>
+
                         <div class="card-body centralizar">
                             <h4 class="card-title">O Senhor dos Aneis</h4>
                             <p class="card-text">
@@ -235,7 +253,7 @@
                         </div>
                     </div>
 
-                    
+
 
                 </div>
             </div>
@@ -243,22 +261,74 @@
             <!--.............................................................-->
 
             <!--esta é a linha do rodapé-->
-            <div class="row ">
+
+
+            <div class="row" >
 
                 <div class="col">
-                    <h4>Atendimento</h4>
+                    <!--<h4>Departamentos</h4>-->
+                    <h4 > Atendimento </h4>
+
+                    <ul class="list-unstyled text-secondary">
+                        <h6>De segunda à sábado. Das 8:30h às 18:30h </h6>
+                        <h5>Telefones</h5>
+                        <li>(44) 3422-2541 </li>
+                        <li>(44) 99235-4531 </li>
+
+
+                    </ul>
+
+                    <hr>
+                    <h4 > Endereço </h4>
+                    <h6 class=" text-secondary" style="font-size: 15px; " >  </h6>
+
+                    <ul class="list-unstyled text-secondary" >
+                        <li>Rua das Palmeiras</li>
+                        <li>Nº 413</li>
+                        <li>CEP: 87720-900</li>
+                        <li>Paranavaí - PR</li>
+
+
+                    </ul>
                 </div>
 
-                <div class="col">
-                    <h4>Sobre nós</h4>
+                <div class="col list-group" style="text-align: center">
+                    <!--<h4>Minha Conta</h4>-->
+                    <!--<a href="#" class="btn btn-success">Login</a>-->
+                    <h4> Rede social </h4>
+
+
+                    <a class="fa fa-facebook-square text-secondary" 
+                       style="text-decoration: none; line-height: 2.0; center" href="#" > Facebook </a> 
+
+                    <a  class="fa fa-twitter-square text-secondary" 
+                        style="text-decoration: none; line-height: 2.0; center" href="#"  >Twitter </a> 
+
+                    <a   class="fa fa-instagram list-unstyled text-secondary"  
+                         style="text-decoration: none; line-height: 2.5; center" href="#" > Instagram </a> 
+
                 </div>
 
+
+
                 <div class="col">
-                    <h4>Pagamento</h4>
+                    <h4 class="centralizar"> Formas de pagamento </h4>
+                    <img id="cartao" src="imagens/cartoes.png" alt="">
+                     
                 </div>
 
             </div>
 
+
+
+            <!--------------------------------------------->
+
+
+            <h6 class="fa fa-copyright text-secondary text-center" aria-hidden="true"  style="font-size: 12px; 
+                position:relative;
+                bottom:0; 
+                width:100%;
+                margin-top: 10px; "> Copyright 2017 - Felipe Batista Giovanini - Todos os direitos reservados</h6>
         </div>
     </body>
 </html>

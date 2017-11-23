@@ -22,6 +22,7 @@ and open the template in the editor.
         <!--Importar o CSS do Bootstrap-->
         <link rel="stylesheet" href="css/bootstrap.css"/>
 
+        <linK rel="stylesheet" type="text/css" href="css/estilo.css"/>
         <style type="text/css">
             .centralizar{
                 text-align: center;
@@ -53,7 +54,7 @@ and open the template in the editor.
                 text-align: center;
                 
             }
-            .card{
+            .cardCarrinho{
                 background-color: #d6d8d9;
             }
         </style>
@@ -66,7 +67,7 @@ and open the template in the editor.
                 <div class="col">
 
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a class="navbar-brand" href="#">Livraria </a>
+                        <a class="navbar-brand" href="#">Livraria Paranavaí</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -131,19 +132,19 @@ and open the template in the editor.
                         </thead>
                         <tbody>
                             <tr >
-                                <td class="centralizar"><img class="card-img " src="imagens/hobbit.png" alt=""> O Hobbit - 7ª Ed. 2013</td>
+                                <td class="centralizar"><img class="card-img imgProdCar" src="imagens/hobbit.png" alt=""> O Hobbit - 7ª Ed. 2013</td>
                                 <td class="centralizar">R$ 19,90</td>
                                 <td class="centralizar">1</td>
                                 <td class="centralizar">R$ 19,90</td>
                             </tr>
                             <tr>
-                                <td class="centralizar"><img class="card-img " src="imagens/it.png" alt=""> It - A Coisa</td>
+                                <td class="centralizar"><img class="card-img imgProdCar" src="imagens/it.png" alt=""> It - A Coisa</td>
                                 <td class="centralizar">R$ 56,24</td>
                                 <td class="centralizar">1</td>
                                 <td class="centralizar">R$ 56,24</td>
                             </tr>
                             <tr>
-                                <td class="centralizar"><img class="card-img " src="imagens/watchmen1.png" alt=""> Watchmen</td>
+                                <td class="centralizar"><img class="card-img imgProdCar" src="imagens/watchmen1.png" alt=""> Watchmen</td>
                                 <td class="centralizar">R$ 88,00</td>
                                 <td class="centralizar">1</td>
                                 <td class="centralizar">R$ 88,00</td>
@@ -153,7 +154,7 @@ and open the template in the editor.
                 </div>
 
                 <div class="col-4">
-                    <div class="card" style="width: 21rem;">
+                    <div class="card cardCarrinho" style="width: 21rem;">
                         <div class="card-body">
                             <h6 class="card-title">Cupom de desconto</h6>
                             <form class="form-inline">
@@ -164,7 +165,7 @@ and open the template in the editor.
                             </form>
                         </div>
                     </div>
-                    <div class="card" style="width: 21rem;">
+                    <div class="card cardCarrinho" style="width: 21rem;">
                         <div class="card-body">
                             <h6 class="card-title">Consulte o frete e prazos de entrega</h6>
                             <form class="form-inline">
@@ -182,7 +183,7 @@ and open the template in the editor.
                             </form>
                         </div>
                     </div>
-                    <div class="card" style="width: 21rem;">
+                    <div class="card cardCarrinho" style="width: 21rem;">
                         <div class="card-body">
                             <h5 class="card-title form-check-inline">SUBTOTAL</h5>
                             <input type="text" readonly class="form-control-plaintext" id="valorSubTotal" value="R$ 164,14">
@@ -197,21 +198,72 @@ and open the template in the editor.
             <!--.............................................................-->
 
             <!--esta é a linha do rodapé-->
-            <div class="row ">
+            <div class="row" >
 
                 <div class="col">
-                    <h4>Atendimento</h4>
+                    <!--<h4>Departamentos</h4>-->
+                    <h4 > Atendimento </h4>
+
+                    <ul class="list-unstyled text-secondary">
+                        <h6>De segunda à sábado. Das 8:30h às 18:30h </h6>
+                        <h5>Telefones</h5>
+                        <li>(44) 3422-2541 </li>
+                        <li>(44) 99235-4531 </li>
+
+
+                    </ul>
+
+                    <hr>
+                    <h4 > Endereço </h4>
+                    <h6 class=" text-secondary" style="font-size: 15px; " >  </h6>
+
+                    <ul class="list-unstyled text-secondary" >
+                        <li>Rua das Palmeiras</li>
+                        <li>Nº 413</li>
+                        <li>CEP: 87720-900</li>
+                        <li>Paranavaí - PR</li>
+
+
+                    </ul>
                 </div>
 
-                <div class="col">
-                    <h4>Sobre nós</h4>
+                <div class="col list-group" style="text-align: center">
+                    <!--<h4>Minha Conta</h4>-->
+                    <!--<a href="#" class="btn btn-success">Login</a>-->
+                    <h4> Rede social </h4>
+
+
+                    <a class="fa fa-facebook-square text-secondary" 
+                       style="text-decoration: none; line-height: 2.0; center" href="#" > Facebook </a> 
+
+                    <a  class="fa fa-twitter-square text-secondary" 
+                        style="text-decoration: none; line-height: 2.0; center" href="#"  >Twitter </a> 
+
+                    <a   class="fa fa-instagram list-unstyled text-secondary"  
+                         style="text-decoration: none; line-height: 2.5; center" href="#" > Instagram </a> 
+
                 </div>
 
+
+
                 <div class="col">
-                    <h4>Pagamento</h4>
+                    <h4 class="centralizar"> Formas de pagamento </h4>
+                    <img id="cartao" src="imagens/cartoes.png" alt="">
+                     
                 </div>
 
             </div>
+
+
+
+            <!--------------------------------------------->
+
+
+            <h6 class="fa fa-copyright text-secondary text-center" aria-hidden="true"  style="font-size: 12px; 
+                position:relative;
+                bottom:0; 
+                width:100%;
+                margin-top: 10px; "> Copyright 2017 - Felipe Batista Giovanini - Todos os direitos reservados</h6>
 
         </div>
     </body>

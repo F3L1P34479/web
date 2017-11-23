@@ -1,0 +1,68 @@
+.centralizar{
+    text-align: center;
+}
+body{
+    background-image: url(../imagens/fundo.jpg);
+}
+
+.carousel-inner{
+    height: 500px;
+}
+.carousel-inner img{
+    height: 500px;
+}
+.container{
+    background-color: white;
+
+}
+#imgProduto{
+    width: 300px;
+    height: 440px;
+    margin: 10px;
+
+}
+.card-img{
+    width: 140px;
+    height: 200px;
+    margin: 10px;
+
+}
+.card{
+    margin: 5px;
+}
+.row{
+    margin-bottom: 10px;
+}
+#cartao{
+    width: 300px; 
+    height: 200px;
+}
+#carrinho{
+    width: 30px; 
+    height: 30px;
+    text-align: right;
+}
+#valorSubTotal{
+    text-align: right;
+    font-size: 17px;
+    background-color: #d6d8d9;
+}
+#valorTotal{
+    text-align: right;
+    margin-left: 13px;
+    font-size: 17px;
+    background-color: #d6d8d9;
+}
+.btnContinuar{
+    text-align: center;
+
+}
+.cardCarrinho{
+    background-color: #d6d8d9;
+}
+.card-img imgProdCar{
+    width: 40px;
+    height: 60px;
+
+
+}
