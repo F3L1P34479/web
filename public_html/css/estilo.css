@@ -30,6 +30,7 @@ body{
 .card{
     margin: 5px;
 }
+
 .row{
     margin-bottom: 10px;
 }
@@ -41,6 +42,7 @@ body{
     width: 30px; 
     height: 30px;
     text-align: right;
+    color: white;
 }
 #valorSubTotal{
     text-align: right;
@@ -65,4 +67,7 @@ body{
     height: 60px;
 
 
+}
+.card-header{
+    color: white;
 }
